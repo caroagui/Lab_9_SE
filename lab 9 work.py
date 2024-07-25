@@ -1,4 +1,4 @@
-# input is password
+# Input is the string "password"
 
 def main():
     while True:
@@ -12,9 +12,7 @@ def main():
         if option == "1":
             password = input("Please enter the password to encode: ")
             original = password
-            password = encode(password) #this needs to be accessible to the rest
-            # of the function so that option 2 can grab it also
-            # it is as encode.new_password ???
+            password = encode(password)
             print("Your password has been encoded and stored!\n")
         elif option == "2":
             # decode(encoded)
@@ -44,7 +42,6 @@ def encode(password):
 
 
 def decode(password):
-    # encoded = encode(password)
     old_password = []
     for char in password:
         char = int(char)
