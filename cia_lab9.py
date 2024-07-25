@@ -40,21 +40,8 @@ def encode(password):
     return encoded_pw
 
 
-def decode(password):
-    old_password = []
-    for char in password:
-        char = int(char)
-        if 3 <= char <= 9:
-            char = str(char - 3)
-        elif char == 0:
-            char = "7"
-        elif char == 1:
-            char = "8"
-        elif char == 2:
-            char = "9"
-        old_password.append(char)
-    original = ''.join(old_password)
-    return password, original
+# decode function!
+
 
 
 if __name__ == "__main__":
