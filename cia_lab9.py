@@ -41,7 +41,8 @@ def encode(password):
 
 
 # decode function!
-
+def decode(password):
+    pass # to be completed by partner
 
 
 if __name__ == "__main__":
