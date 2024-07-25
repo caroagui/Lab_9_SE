@@ -15,10 +15,9 @@ def main():
             password = encode(password)
             print("Your password has been encoded and stored!\n")
         elif option == "2":
-            # decode(encoded)
             print(f"The encoded password is {password}, and the original password is {original}.\n")
         elif option == "3":
-            print("Thank you!") # check
+            print("Thank you!")
             exit()
         else:
             print("Invalid option!")
