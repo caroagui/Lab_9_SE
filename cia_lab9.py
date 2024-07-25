@@ -42,8 +42,18 @@ def encode(password):
 
 # decode function!
 def decode(password):
-    pass # to be completed by partner
-
+    new_str=""
+    for char in password:
+        if char=="0":
+            new_num=7
+        elif char=="1":
+            new_num=8
+        elif char=="2":
+            new_num=9
+        else:
+            new_num=int(char)-3
+        new_str+=str(new_num)
+    return new_str
 
 if __name__ == "__main__":
     main()
